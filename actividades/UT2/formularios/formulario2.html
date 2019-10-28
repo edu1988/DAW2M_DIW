@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+
+<body>
+
+    <form method="get" action="hola.php">
+    <fieldset>
+        <legend>Únete</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
+        
+            <ul>
+                <li>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <input type="text" name="nombre" id="nombre" />
+                </li>
+                <li>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" placeholder="Escribe aquí tu texto"></textarea>
+                </li>
+            </ul>
+            <input type="submit" name="enviar" value="Enviar" />
+        
+    </fieldset>
+    </form>
+
+    <form method="get" action="hola.php">
+    <fieldset>
+        <legend>Campos de entrada de texto especiales</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
+        
+            <ul>
+                <li>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass" />
+                </li>
+                <li>
+                    <label for="email">Email[HTML5]</label>
+                    <input type="email" name="email" id="email" required />
+                </li>
+                <li>
+                    <label for="search">Buscar[HTML5]</label>
+                    <input type="search" name="search" id="search" required />
+                </li>
+                <li>
+                    <label for="telefono">Telefono[HTML5]</label>
+                    <input type="tel" name="telefono" required id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </li>
+                <li>
+                    <label for="url">URL[HTML5]</label>
+                    <input type="url" name="url" id="url" autofocus required />
+                </li>
+            </ul>
+            <input type="submit" name="enviar" value="Enviar" />
+        
+    </fieldset>
+</form>
+
+</body>
+
+</html>

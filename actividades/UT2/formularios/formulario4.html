@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset{
+            display:inline-block;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Únete</legend>
+        <p>Nuestros socios tienen muchas ventajas. ¡Y es gratis!</p>
+        <form method="get" action="hola.php">
+            <ul>
+                <li>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <input type="text" name="nombre" id="nombre"/>
+                </li>
+                <li>
+                    <label for="edad">Edad</label>
+                    <input list="edades" name="edad" id="edad">
+                </li>
+            </ul>
+            <input type="submit" name="enviar" value="Enviar"/>
+            
+
+            <datalist id="edades">
+              <option value="Menor de 20">
+              <option value="Entre 20 y 40">
+              <option value="Entre 40 y 50">
+              <option value="Más de 50">
+            </datalist> 
+        </form>
+    </fieldset>
+</body>
+</html>
