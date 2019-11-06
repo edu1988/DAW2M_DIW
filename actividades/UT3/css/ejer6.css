@@ -1,0 +1,8 @@
+@font-face {
+    font-family: batsion;
+    src: "fuentes/battshion.otf";
+}
+
+*{
+    font-family: batsion;
+}
