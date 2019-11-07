@@ -10,6 +10,9 @@
       font-size: 100%;
       background: linear-gradient(to bottom, #ffa853 0%, #fdf9bd 2%);
     }
+    *{
+      box-sizing: border-box;
+    }
 
     /* link styles */
     a:link {
@@ -49,9 +52,20 @@
       font-style: italic;
     }
 
+
+
     /* styles for navigation */
     #nav {
       background-color: #751c54;
+      text-align:center;
+    
+    }
+
+    #nav a{
+      width:4em;
+     
+      text-decoration:none;
+      display: inline-block;
     }
 
     #nav ul {
@@ -61,6 +75,11 @@
     #nav ul li {
       font-weight: normal;
       text-transform: uppercase;
+      display: inline-block;
+      margin:4px;
+      border: 2px solid pink;
+      border-radius: 5px;
+      padding:10px;
     }
 
     #nav ul a:link {
@@ -91,7 +110,10 @@
       border:1px solid orange;
       width:95%;
       float:left;
-      margin-left:2.5%;
+
+      width:60%;
+      margin-left:3.3%;
+      margin-bottom:3.3%;
       padding:3px;
     }
 
@@ -106,6 +128,13 @@
       font-size: 1em;
       text-transform: uppercase;
       color: #F26521;
+      
+    }
+
+    #content{
+      clear:both;
+      overflow:auto;
+
     }
 
     /* styles for the testimonials box */
@@ -116,6 +145,11 @@
       line-height: 1.5;
       color: #633;
       float:left;
+      margin-left:3.3%;
+      width:30%;
+      border-radius: 30px;
+      padding:20px;
+      margin-bottom:50px;
     }
 
     #testimonials h2 {
@@ -137,6 +171,9 @@
       color: #663333;
       font-size: .8em;
       text-align: center;
+      clear:both;
+      margin-top:700px;
+      
     }
   </style>
 
@@ -191,7 +228,8 @@
       <p>&quot;Thanks for the cool Jenware barware. I couldn't wait until I found &quot;Mr. Right,&quot; so I just
         bought a set for myself! My friends always want to know where I got them so I send them to your site.&quot; </p>
     </div>
-    <p>&nbsp;</p>
+    <!--div-- style="clear: both;"></!--div-->
+    
     <p id="copyright">All content copyright &copy; Jennifer Robbins and Jenware, Inc. </p>
 
   </div><!-- end #content -->
