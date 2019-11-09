@@ -19,14 +19,11 @@
     /* link styles */
     a:link {
       color: #C00;
-      border-bottom: 2px dotted rgb(255, 255, 255);
       text-decoration: none;
     }
 
     a:visited {
       color: #921A66;
-      border-bottom: 2px dotted rgb(255, 255, 255);
-      text-decoration: none;
     }
 
     a:focus {
@@ -61,6 +58,8 @@
     /* styles for navigation */
     #nav {
       background-color: #751c54;
+      text-align:center;
+      overflow:auto;
     }
 
     #nav ul {
@@ -70,22 +69,32 @@
     #nav ul li {
       font-weight: normal;
       text-transform: uppercase;
+      display:inline-block;
+
     }
 
     #nav ul a:link {
       color: #fff;
+      
+      border-radius: 10px;
+      margin:1px;
+      padding:10px;
+      border:1px solid #ba89a8;
     }
 
     #nav ul a:visited {
       color: #fff;
+      border:1px solid #ba89a8;
     }
 
     #nav ul a:focus {
-      color: #FC6
+      color: #FC6;
+      border:1px solid #ba89a8;
     }
 
     #nav ul a:hover {
       color: #fc6;
+      border:1px solid white;
     }
 
     #nav ul a:active {
