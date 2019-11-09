@@ -5,28 +5,22 @@
   <meta charset="UTF-8">
   <title>Jenware | Personalized Gifts</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-
       font-family: Verdana, Geneva, sans-serif;
       font-size: 100%;
       background: linear-gradient(to bottom, #ffa853 0%, #fdf9bd 2%);
+    }
+    *{
+      box-sizing: border-box;
     }
 
     /* link styles */
     a:link {
       color: #C00;
-      border-bottom: 2px dotted rgb(255, 255, 255);
-      text-decoration: none;
     }
 
     a:visited {
       color: #921A66;
-      border-bottom: 2px dotted rgb(255, 255, 255);
-      text-decoration: none;
     }
 
     a:focus {
@@ -58,9 +52,20 @@
       font-style: italic;
     }
 
+
+
     /* styles for navigation */
     #nav {
       background-color: #751c54;
+      text-align:center;
+    
+    }
+
+    #nav a{
+      width:4em;
+     
+      text-decoration:none;
+      display: inline-block;
     }
 
     #nav ul {
@@ -70,6 +75,11 @@
     #nav ul li {
       font-weight: normal;
       text-transform: uppercase;
+      display: inline-block;
+      margin:4px;
+      border: 2px solid pink;
+      border-radius: 5px;
+      padding:10px;
     }
 
     #nav ul a:link {
@@ -92,21 +102,19 @@
       color: #F00;
     }
 
-    /*Estilos para los enlaces dentro de un p*/
-    p>a[href='#'] {
-      border-bottom: 1px dotted #921A66;
-      text-decoration: none;
-    }
-
     /* styles for the products section */
 
     #products {
-      background-color: #FFF;
+      background-color: rgb(255, 255, 255);
       line-height: 1.5em;
-      border: 3px double orange;
-      padding: 20px;
-      margin: 25px;
+      border:1px solid orange;
+      width:95%;
+      float:left;
 
+      width:60%;
+      margin-left:3.3%;
+      margin-bottom:3.3%;
+      padding:3px;
     }
 
     #products h2 {
@@ -120,10 +128,13 @@
       font-size: 1em;
       text-transform: uppercase;
       color: #F26521;
-      border-top: 1px solid orange;
-      border-left: 3px solid orange;
-      padding-left: 20px;
-      margin-top: 60px;
+      
+    }
+
+    #content{
+      clear:both;
+      overflow:auto;
+
     }
 
     /* styles for the testimonials box */
@@ -133,11 +144,12 @@
       font-size: .875em;
       line-height: 1.5;
       color: #633;
-      width: 70%;
-      margin-left: 15%;
-      margin-right: 15%;
-      padding: 30px 20px 30px 60px;
+      float:left;
+      margin-left:3.3%;
+      width:30%;
       border-radius: 30px;
+      padding:20px;
+      margin-bottom:50px;
     }
 
     #testimonials h2 {
@@ -147,25 +159,7 @@
       letter-spacing: 3px;
     }
 
-    /*Estilos para los parrafos dentro despues de h3*/
-    h3 + p{
-      float:left;
-      width:30%;
-      margin-right:5%;
-    }
 
-    h3 + p + p{
-      float:left;
-      width:65%;
-    }
-
-    h3 +p +p +p{
-      clear:both;
-    }
-
-    p > img{
-      width:100%;
-    }
 
     /* miscellaneous styles */
 
@@ -177,6 +171,9 @@
       color: #663333;
       font-size: .8em;
       text-align: center;
+      clear:both;
+      margin-top:700px;
+      
     }
   </style>
 
@@ -231,7 +228,8 @@
       <p>&quot;Thanks for the cool Jenware barware. I couldn't wait until I found &quot;Mr. Right,&quot; so I just
         bought a set for myself! My friends always want to know where I got them so I send them to your site.&quot; </p>
     </div>
-    <p>&nbsp;</p>
+    <!--div-- style="clear: both;"></!--div-->
+    
     <p id="copyright">All content copyright &copy; Jennifer Robbins and Jenware, Inc. </p>
 
   </div><!-- end #content -->
