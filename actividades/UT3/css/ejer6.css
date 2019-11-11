@@ -1,8 +1,8 @@
 @font-face {
     font-family: batsion;
-    src: "fuentes/battshion.otf";
+    src: url("https://fonts.google.com/specimen/PT+Serif");
 }
 
-*{
+h1{
     font-family: batsion;
 }
