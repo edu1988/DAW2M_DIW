@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,6 +19,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	padding:40px;
 }
 ol, ul {
 	list-style: none;
@@ -49,46 +38,95 @@ table {
 }
 
 form{
-	margin:20px;
+	width:520px;
 	border:1px solid black;
-	border-radius: 10px;
 	display:inline-block;
-	background-color: lightblue;
 	padding:20px;
-	box-shadow: 0px 0px 10px #666;
+	background-color: lightblue;
+	border-radius: 20px;
+	box-shadow: 5px 5px 25px black;
 }
+
+h2{
+	font-size:1.1em;
+	font-weight: bold;
+	margin:5px 0 25px 0;
+}
+
 
 label[for="form-name"],
 label[for="form-email"],
 label[for="form-tel"],
 label[for="form-story"],
-label[for="form-sizes"]{
-	display:block;
+label[for="sizes"]{
+
 	float:left;
-	width:80px;
-	text-align: right;
-	padding-right: 10px;
+	display:block;
+	width:150px;
+	text-align:right;
+	margin-right:15px;
+	font-weight: bold;
+	color: rgb(103, 173, 230);
 }
 
-label+input,textarea{
-	width:400px;
+label + input,textarea{
+	border:1px solid black;
+	width:300px;
 }
 
 li{
 	margin:10px;
 }
 
-fieldset li{
+select{
+	border:1px solid black;
+}
+
+em{
+	opacity:0.4;
+}
+
+legend{
+	font-weight: bold;
+	color: rgb(103, 173, 230);
+	float:left;
+	display:block;
+	width:150px;
+	text-align:right;
+	margin-right:15px;
+	margin-top:8px;
+}
+
+#colors li{
 	display:inline-block;
 }
 
-h2{
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-bottom:40px;
+fieldset li{
+	margin:9px 0 0 4px;
 }
 
-input[type='checkbox']{
-	display:block;
+#features li{
+	margin-left:170px;
 }
 
+.buttons{
+	text-align:center;
+	padding:15px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+	border:1px solid black;
+	border-radius: 5px;
+	width:140px;
+	height:30px;
+}
+
+input[type="submit"]:visited,
+input[type="reset"]:visited{
+	border:1px solid black;
+	border-radius: 5px;
+	width:140px;
+	height:30px;
+	color:red;
+}
