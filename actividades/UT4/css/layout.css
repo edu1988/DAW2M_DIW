@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+body>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: tomato;
+}
+
+.footer {
+    background: lightgreen;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    min-height: 80vh;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+.aside-2 {
+    background: hotpink;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
