@@ -1,0 +1,31 @@
+#cajapadre{
+    display:flex;
+    border:1px solid red;
+    width:600px;
+    height:200px;
+    flex-wrap:wrap;
+    align-content: flex-start;
+}
+
+#cajapadre>div{
+    
+    height: 50px;
+    margin:5px;
+    background-color: #CCCCCC;
+}
+
+#caja-1{
+    flex: 1 1 100px;
+}
+
+#caja-2{
+    flex: 1 1 100px;
+}
+
+#caja-3{
+    flex: 1 1 100px;
+}
+
+#caja-4{
+    flex: 1 1 400px;
+}
