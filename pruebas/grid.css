@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header""main aside""footer footer";
+}
+
+header {
+    background-color: lightgreen;
+    grid-area: header;
+}
+
+main {
+    background-color: limegreen;
+    grid-area: main;
+    overflow: visible;
+}
+
+aside {
+    background-color: palevioletred;
+    grid-area: aside;
+}
+
+footer {
+    background-color: royalblue;
+    grid-area: footer;
+}
