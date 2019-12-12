@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grid {
+            display: inline-grid;
+            grid-template-rows: [first] 100px [line2] 100px [line3] 100px [line4] 100px [si];
+            grid-template-columns: [first-column] 100px [second] auto [third] 100px [ultima] 100px [ulti];
+            grid-template-areas:
+                "header header header header"
+                "main main main aside"
+                "footer footer footer footer";
+            width: 500px;
+            height: 500px;
+
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            border: 1px solid red;
+
+
+        }
+
+        header {
+            background-color: cadetblue;
+            grid-area: header;
+        }
+
+        main {
+            background-color: rgb(241, 126, 226);
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: rgb(91, 233, 91);
+        }
+
+        footer {
+            background-color: rgb(235, 190, 66);
+            grid-area: footer;
+        }
+
+        p:nth-of-type(1) {
+            background-color: royalblue;
+
+        }
+
+        p:nth-of-type(2) {
+            background-color: slategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <header>HEADER</header>
+        <main>MAIN</main>
+        <aside>ASIDE</aside>
+        <footer>FOOTER</footer>
+        <p>Parrafo1</p>
+        <p>Parrafo2</p>
+    </div>
+</body>
+
+</html>
