@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+    color:white;
+}
+
+img{
+    display:block;
+    width:100%;
+    max-width:400px;
+    
+}
+
+/* div{
+    background-image: url("../examen1ev/pictures/corazon.png");
+    width:400px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+@media print{
+    body {
+        font-family: serif;
+        background-color: white;
+        color: black;
+    }
+
+    header{
+        display:none;
+    }
+
+    a:after{
+        content:" (" attr(href) ") ";
+    }
+}
