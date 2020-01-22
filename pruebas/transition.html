@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-        div{
-            border:3px solid red;
-            border-radius: 30px;
-            width:200px;
-            height:100px;
-            transition:0.2s;
-        }
+      div {
+        border: 3px solid red;
+        border-radius: 30px;
+        background-color: darkgreen;
+        width: 200px;
+        height: 100px;
+        animation: 1s spin linear infinite;
+      }
 
-        div:hover{
-            border:3px solid green;
-            width:400px;
-            height:400px;
-            background: orange;
-            border-radius:60px;
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
         }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      div:hover {
+        animation: 1s spin linear infinite;
+      }
     </style>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
+  </head>
+  <body>
+    <div></div>
+  </body>
 </html>
