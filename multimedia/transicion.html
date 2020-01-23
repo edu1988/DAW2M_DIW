@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #externo {
+        position: relative;
+        border: 1px solid red;
+        width: 300px;
+        height: 30px;
+        padding: 3px;
+      }
+
+      #interno {
+        height: 30px;
+        background-color: rgb(183, 183, 235);
+        animation: 10s cargar linear infinite;
+        animation-play-state: paused;
+      }
+
+      p {
+        position: absolute;
+        top: -6px;
+        left: 60px;
+      }
+
+      @keyframes cargar {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="externo">
+      <p>CARGANDO VIRUS...</p>
+      <div id="interno"></div>
+    </div>
+    <button>CARGAR VIRUS</button>
+    <button>DENTENER LA CARGA</button>
+    <script>
+      window.onload = iniciar;
+
+      var botones = document.getElementsByTagName("button");
+
+      for (var i = 0; i < 2; i++) {
+        var boton = botones.item(i);
+        boton.addEventListener("click", iniciar(i));
+      }
+
+      function iniciar(indiceBoton) {
+        return function iniciar() {
+          var graficos = document.getElementById("externo");
+
+          graficos.style.display = "block";
+          if (indiceBoton == 0) {
+            document.getElementById("interno").style.animationPlayState =
+              "running";
+          } else {
+            document.getElementById("interno").style.animationPlayState =
+              "paused";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
