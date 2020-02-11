@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #content {
+        
+        display: flex;
+        border:1px solid red;
+        
+        justify-content: space-around;
+        
+        
+        
+        
+      }
+
+      .box {
+        
+        border: 3px solid rgba(0, 0, 0, 0.2);
+        flex-basis: 30%;
+      }
+
+      .box1 {
+        
+        border: 3px solid rgba(0, 0, 0, 0.2);
+        flex-basis: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>This is a Flex-Grow</h4>
+    <h5>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h5>
+    <div id="content">
+      <div class="box" style="background-color:red;">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat?</div>
+      <div class="box" style="background-color:lightblue;">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste autem ducimus repudiandae magnam doloribus.</div>
+      <div class="box" style="background-color:yellow;">C Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laudantium necessitatibus! Sequi at rerum quam, consequuntur pariatur eius aliquid animi.</div>
+      <div class="box1" style="background-color:brown;">D Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="box1" style="background-color:lightgreen;">E Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci.</div>
+      <div class="box" style="background-color:brown;">F Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, ex culpa?</div>
+    </div>
+  </body>
+</html>
